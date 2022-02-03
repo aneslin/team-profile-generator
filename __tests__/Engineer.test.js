@@ -17,5 +17,6 @@ test("check enginner functions" ,()=>{
     expect(engineer.getName()).toBe("Bob");
     expect(engineer.getEmail()).toBe("bob@bob.com");
     expect(engineer.getGithub()).toBe('bobgit');
+    expect(engineer.getId()).toBe(0)
 
 })
