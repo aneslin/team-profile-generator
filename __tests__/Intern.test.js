@@ -1,4 +1,4 @@
-const Intern = requre('../lib/intern')
+const Intern = require('../lib/Intern')
 
 
 test(' check constructor', ()=> {
@@ -13,10 +13,10 @@ test(' check constructor', ()=> {
 test('check functions', ()=> {
     const intern = new Intern("Bob", "bob@bob.com", 0, "bob College")
 
-    expect(intern.GetRole()).toBe('Intern')
-    expect(intern.GetEmail()).toBe('bob@bob.com')
-    expect(intern.GetId()).toBe(0)
-    expect(intern.GetName).toBe("Bob")
+    expect(intern.getRole()).toBe('Intern')
+    expect(intern.getEmail()).toBe('bob@bob.com')
+    expect(intern.getId()).toBe(0)
+    expect(intern.getName()).toBe("Bob")
 
 })
 
