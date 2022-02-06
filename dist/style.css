@@ -1,3 +1,11 @@
+header {
+    text-align: center;
+    background-color: navy;
+    color: maroon;
+    padding:5px;
+}
 
-
-
+ul {
+    list-style-type: none;
+    padding: 0;
+}

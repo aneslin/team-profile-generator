@@ -45,7 +45,6 @@ const createEngineer = function() {inquirer.prompt(engineerData)
             engineerResults.github
         )
         employeeArray.push(engineer)
-        console.log(employeeArray)
         nextThing()
       
     })
@@ -60,7 +59,6 @@ const createIntern = function(){inquirer.prompt(internData)
            internResults.school
         )
         employeeArray.push(intern)
-        console.log(employeeArray)
         nextThing()
     })}
 
@@ -76,7 +74,6 @@ createManager().then(managerResults => {
         managerResults.officeNum)
 
     employeeArray.push(manager)
-    console.log(employeeArray)
     nextThing()
 })
 
