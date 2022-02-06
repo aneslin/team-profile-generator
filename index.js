@@ -1,10 +1,11 @@
 const inquirer = require('inquirer')
-const fs = require('fs')
+
 const Manager = require('./lib/Manager')
 const Engineer = require('./lib/Engineer')
 const Intern = require('./lib/Intern')
 const makePage = require('./src/page-template')
 const {managerData, engineerData, internData} = require('./lib/questions')
+const {writeFile, copyFile} = require('./utils/makefile')
 const employeeArray= []
 
 
@@ -28,7 +29,8 @@ const nextThing = () => {
                 createIntern()
             break;
             default:
-                console.log(makePage(employeeArray))
+              writeFile(makePage(employeeArray))
+              copyFile()
         }
         
     })
