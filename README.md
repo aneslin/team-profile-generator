@@ -25,3 +25,7 @@ Includes tests for each of the four classes uses using Jest.
 
 ## Video  
 [Video link](https://drive.google.com/file/d/1_cox4UQUFPX0GTriQ1DByJu4Yv-UREqt/view)
+
+
+## Acknowledgments 
+makefile.js includes code similar to or inspired by the Trilogy learning full stack developer course lesson 9 portfolio- generator
