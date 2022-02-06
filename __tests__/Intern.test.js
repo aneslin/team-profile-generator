@@ -1,8 +1,9 @@
+
 const Intern = require('../lib/Intern')
 
 
 test(' check constructor', ()=> {
-    const intern = new Intern("Bob", "bob@bob.com", 0, "bob College")
+    const intern = new Intern("Bob",0, "bob@bob.com",  "bob College")
 
     expect(intern.name).toEqual(expect.any(String))
     expect(intern.id).toEqual(expect.any(Number))
@@ -11,7 +12,7 @@ test(' check constructor', ()=> {
 });
 
 test('check functions', ()=> {
-    const intern = new Intern("Bob", "bob@bob.com", 0, "bob College")
+    const intern = new Intern("Bob", 0, "bob@bob.com",  "bob College")
 
     expect(intern.getRole()).toBe('Intern')
     expect(intern.getEmail()).toBe('bob@bob.com')

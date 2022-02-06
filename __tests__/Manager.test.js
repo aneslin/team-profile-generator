@@ -1,7 +1,7 @@
 const Manager = require("../lib/Manager")
 
 test("check constructor", ()=> {
-    manager = new Manager('Bob', 'bob@bob.com', 2,'540')
+    manager = new Manager('Bob',2, 'bob@bob.com', '540')
     expect(manager.name).toEqual(expect.any(String))
     expect(manager.email).toEqual(expect.any(String))
     expect(manager.id).toEqual(expect.any(Number))
@@ -9,7 +9,7 @@ test("check constructor", ()=> {
 })
 
 test("check manager functions" ,()=>{
-    const manager = new Manager('Bob', 'bob@bob.com', 2,'540')
+    const manager = new Manager('Bob',2, 'bob@bob.com', '540')
 
     expect(manager.getRole()).toBe("Manager");
     expect(manager.getName()).toBe("Bob");

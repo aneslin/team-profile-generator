@@ -8,7 +8,7 @@ const Employee = require('../lib/Employee')
 
 
 test(' check constructor', ()=> {
-    const employee = new Employee("Bob", "bob@bob.com", 0)
+    const employee = new Employee("Bob", 0, "bob@bob.com")
 
     expect(employee.name).toEqual(expect.any(String))
     expect(employee.id).toEqual(expect.any(Number))
@@ -17,7 +17,7 @@ test(' check constructor', ()=> {
 })
 
 test("check employee functions" ,()=>{
-    const employee = new Employee("Bob", "bob@bob.com", 0)
+    const employee = new Employee("Bob", 0, "bob@bob.com")
 
     expect(employee.getRole()).toBe("Employee");
     expect(employee.getName()).toBe("Bob");

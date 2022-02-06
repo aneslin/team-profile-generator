@@ -1,7 +1,7 @@
 const Engineer = require("../lib/Engineer")
 
 test(' check constructor', ()=> {
-    const engineer = new Engineer("Bob", "bob@bob.com", 0, "bobgit")
+    const engineer = new Engineer("Bob", 0, "bob@bob.com",  "bobgit")
 
     expect(engineer.name).toEqual(expect.any(String))
     expect(engineer.id).toEqual(expect.any(Number))
@@ -11,7 +11,7 @@ test(' check constructor', ()=> {
 })
 
 test("check enginner functions" ,()=>{
-    const engineer = new Engineer("Bob", "bob@bob.com",0, 'bobgit' )
+    const engineer = new Engineer("Bob",0, "bob@bob.com", 'bobgit' )
 
     expect(engineer.getRole()).toBe("Engineer");
     expect(engineer.getName()).toBe("Bob");

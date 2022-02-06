@@ -1,10 +1,10 @@
 const inquirer = require('inquirer')
 const fs = require('fs')
-const Manager = require('./Manager')
-const Engineer = require('./Engineer')
-const Intern = require('./Intern')
-const makePage = require('../src/page-template')
-const {managerData, engineerData, internData} = require('./questions')
+const Manager = require('./lib/Manager')
+const Engineer = require('./lib/Engineer')
+const Intern = require('./lib/Intern')
+const makePage = require('./src/page-template')
+const {managerData, engineerData, internData} = require('./lib/questions')
 const employeeArray= []
 
 
@@ -77,7 +77,5 @@ createManager().then(managerResults => {
     console.log(employeeArray)
     nextThing()
 })
-
-
 
 
